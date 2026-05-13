@@ -1,42 +1,27 @@
+## Module Review — 0.2
 
----
+### Topics Covered
+- Python typing
+- mypy
+- async programming
+- asyncio event loop
+- blocking vs non-blocking execution
+- Pydantic validation
+- logging fundamentals
 
-Now update `progress.md`.
+### Key Insights
+- Type hints are mostly tooling aids, not runtime guarantees
+- Async improves concurrency for I/O-bound systems
+- Blocking calls inside async systems hurt throughput
+- Pydantic provides runtime validation for unreliable data
+- Logging is critical for production observability
 
-Append:
-
-```md id="8b5hkr"
-## Module Review — 0.1
-
-### What I Built
-- Local Python environment using uv
-- Structured portfolio repository
-- GitHub-connected project
-- Basic Python execution workflow
-- Dependency management setup
-- Ruff linting configuration
-
-### Key Concepts Learned
-- Virtual environments isolate dependencies
-- pyproject.toml defines project configuration
-- Lock files improve reproducibility
-- __name__ == "__main__" separates execution from imports
-- Linters catch static issues automatically
-
-### What Broke / Failure Modes
-- .gitignore does not retroactively untrack files
-- Lint auto-fix cannot safely change semantic behavior
-- Environment activation mistakes can install packages globally
+### AI Engineering Connections
+- LLM outputs require schema validation
+- Async is important for API-heavy AI systems
+- Structured logging is necessary for debugging latency, retries, and hallucinations
 
 ### Still Weak
-- Python module/import system depth
-- Packaging ecosystem understanding
-- Tooling internals
-
-### Next Module
-0.2 — Python refresher:
-- typing
-- async
-- dataclasses
-- pydantic
-- logging
+- Deep event loop internals
+- Advanced typing
+- Structured logging stacks
